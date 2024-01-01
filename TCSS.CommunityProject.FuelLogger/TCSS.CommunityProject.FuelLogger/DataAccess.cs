@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Data.Sqlite;
+﻿using Microsoft.Data.Sqlite;
 using Dapper;
 
 namespace TCSS.CommunityProject.FuelLogger
@@ -23,7 +18,8 @@ namespace TCSS.CommunityProject.FuelLogger
                                 DateCreated DATE NOT NULL,
                                 Make TEXT NOT NULL,
                                 Model TEXT NOT NULL,
-                                FuelType INT NOT NULL
+                                FuelType INT NOT NULL,
+                                Year INT NOT NULL
                     )";
             tableCmd.ExecuteNonQuery();
             connection.Close();
