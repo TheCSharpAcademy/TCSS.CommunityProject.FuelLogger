@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCSS.CommunityProject.FuelLogger", "TCSS.CommunityProject.FuelLogger\TCSS.CommunityProject.FuelLogger.csproj", "{D593CC2E-18C8-4233-BF7F-4D864EEB5E22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D593CC2E-18C8-4233-BF7F-4D864EEB5E22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D593CC2E-18C8-4233-BF7F-4D864EEB5E22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D593CC2E-18C8-4233-BF7F-4D864EEB5E22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D593CC2E-18C8-4233-BF7F-4D864EEB5E22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {852F3F29-3664-4F1E-9022-8AB48B182537}
+	EndGlobalSection
+EndGlobal
