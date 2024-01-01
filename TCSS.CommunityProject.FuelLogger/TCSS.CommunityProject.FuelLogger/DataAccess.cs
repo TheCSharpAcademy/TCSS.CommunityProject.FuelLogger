@@ -1,8 +1,7 @@
 ﻿using Microsoft.Data.Sqlite;
 using Dapper;
 
-namespace TCSS.CommunityProject.FuelLogger
-{
+namespace TCSS.CommunityProject.FuelLogger;
     internal class DataAccess
     {
 
@@ -23,8 +22,6 @@ namespace TCSS.CommunityProject.FuelLogger
                     )";
             tableCmd.ExecuteNonQuery();
             connection.Close();
-
-
         }
     }
-}
+
