@@ -18,7 +18,7 @@ namespace TCSS.CommunityProject.FuelLogger
             SqliteConnection connection = new(connectionString);
             connection.Open();
             var tableCmd = connection.CreateCommand();
-            tableCmd.CommandText = @$"CREATE TABLE IF NOT EXISTS 'vehicle' (
+            tableCmd.CommandText = @$"CREATE TABLE IF NOT EXISTS 'FuelRecord' (
                                 VehicleId INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
                                 DateCreated DATE NOT NULL,
                                 Make TEXT NOT NULL,
