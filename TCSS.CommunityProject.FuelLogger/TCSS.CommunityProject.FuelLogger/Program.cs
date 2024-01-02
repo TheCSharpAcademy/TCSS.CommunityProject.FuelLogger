@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using TCSS.CommunityProject.FuelLogger;
+
+var fuelDataAccess = new DataAccess();
+fuelDataAccess.CreateDatabase();
