@@ -2,7 +2,7 @@
   "profiles": {
     "TCSS.CommunityProject.FuelLogger": {
       "commandName": "Project",
-      "workingDirectory": "C:\\Users\\sipah\\Desktop\\serdar\\projeler\\FuelLogger\\TCSS.CommunityProject.FuelLogger\\TCSS.CommunityProject.FuelLogger\\TCSS.CommunityProject.FuelLogger"
+      "workingDirectory": "C:\\CommunityProject\\TCSS.CommunityProject.FuelLogger\\TCSS.CommunityProject.FuelLogger"
     }
   }
 }
