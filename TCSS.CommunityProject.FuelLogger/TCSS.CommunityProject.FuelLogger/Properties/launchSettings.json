@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "TCSS.CommunityProject.FuelLogger": {
-      "commandName": "Project",
-      "workingDirectory": "C:\\CommunityProject\\TCSS.CommunityProject.FuelLogger\\TCSS.CommunityProject.FuelLogger"
-    }
-  }
-}

@@ -482,3 +482,4 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+/TCSS.CommunityProject.FuelLogger/TCSS.CommunityProject.FuelLogger/Properties/launchSettings.json
