@@ -31,8 +31,6 @@ internal static class SeedData
                 {
                     string content = await response.Content.ReadAsStringAsync();
                     var jsonObject = JsonNode.Parse(content);
-                    Console.WriteLine(jsonObject.ToString());
-                    Console.WriteLine(jsonObject[0]);
                     Vehicle model = JsonConvert.DeserializeObject<Vehicle>(jsonObject[random.Next(0, 1)].ToString());
                     model.Year = random.Next(1970, 2023);
                     model.FuelType = random.Next(1, 3);
