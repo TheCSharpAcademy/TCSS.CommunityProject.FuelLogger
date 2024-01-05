@@ -2,3 +2,5 @@
 
 var fuelDataAccess = new DataAccess();
 fuelDataAccess.CreateDatabase();
+
+UserInterface.MainMenu();
