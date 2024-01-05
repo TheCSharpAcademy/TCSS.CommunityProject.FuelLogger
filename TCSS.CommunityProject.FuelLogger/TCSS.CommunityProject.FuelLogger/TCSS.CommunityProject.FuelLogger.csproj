@@ -10,11 +10,8 @@
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.1.24" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.0" />
-<<<<<<< HEAD
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-=======
     <PackageReference Include="Spectre.Console" Version="0.48.0" />
->>>>>>> a99808ab32fd6a2cdcedf19d9404b9ee43411f06
   </ItemGroup>
 
 </Project>

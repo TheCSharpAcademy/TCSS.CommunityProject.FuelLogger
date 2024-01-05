@@ -16,7 +16,6 @@ internal static class SeedData
             string carMake = carMakers[random.Next(0, carMakers.Length)];
             using (HttpClient httpClient = new HttpClient())
             {
-                Console.WriteLine("new");
                 string url = $"https://api.api-ninjas.com/v1/cars?limit=1&make={carMake}";
 
                 // Create a new HttpRequestMessage
