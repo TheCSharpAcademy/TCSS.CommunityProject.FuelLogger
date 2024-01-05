@@ -9,7 +9,7 @@ internal static class SeedData
     internal static async void SeedRecords(int count)
     {
         Random random = new();
-        List<FuelRecord> records = new();
+        List<Vehicle> records = new();
         string[] carMakers = new[] { "toyota", "mazda", "ford", "mercedes", "audi", "nissan", "hyundai", "Renault" };
         for (int i = 0; i < count; i++)
         {
@@ -22,7 +22,7 @@ internal static class SeedData
                 HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, url);
 
                 // Set a custom header
-                request.Headers.Add("X-Api-Key", "WAVkDKfIiGKTjo7fikhTdQ==PJoxRy4t2tj6lySz");
+                request.Headers.Add("X-Api-Key", "3UbFflSVr6RGgP6kE7uhVQ==baJTfrsTJebtJE7Y");
 
                 // Send the request and get the response
                 HttpResponseMessage response = await httpClient.SendAsync(request);
@@ -33,7 +33,7 @@ internal static class SeedData
                     var jsonObject = JsonNode.Parse(content);
                     Console.WriteLine(jsonObject.ToString());
                     Console.WriteLine(jsonObject[0]);
-                    FuelRecord model = JsonConvert.DeserializeObject<FuelRecord>(jsonObject[random.Next(0, 1)].ToString());
+                    Vehicle model = JsonConvert.DeserializeObject<Vehicle>(jsonObject[random.Next(0, 1)].ToString());
                     model.Year = random.Next(1970, 2023);
                     model.FuelType = random.Next(1, 3);
                     model.DateCreated = DateTime.Now.ToString();
