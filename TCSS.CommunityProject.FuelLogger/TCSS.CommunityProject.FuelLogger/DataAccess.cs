@@ -12,7 +12,7 @@ internal class DataAccess
         SqliteConnection connection = new(connectionString);
         connection.Open();
         var tableCmd = connection.CreateCommand();
-        tableCmd.CommandText = @$"CREATE TABLE IF NOT EXISTS 'FuelRecord' (
+        tableCmd.CommandText = @$"CREATE TABLE IF NOT EXISTS Vehicles (
                                 VehicleId INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
                                 DateCreated DATE NOT NULL,
                                 Make TEXT NOT NULL,
@@ -31,7 +31,7 @@ internal class DataAccess
             connection.Open();
 
             string insertQuery = @"
-        INSERT INTO FuelRecord (DateCreated, Make,Model,FuelType,Year)
+        INSERT INTO Vehicles (DateCreated, Make,Model,FuelType,Year)
         VALUES (@DateCreated, @Make,@Model,@FuelType,@Year)";
 
             connection.Execute(insertQuery, records.Select(record => new
