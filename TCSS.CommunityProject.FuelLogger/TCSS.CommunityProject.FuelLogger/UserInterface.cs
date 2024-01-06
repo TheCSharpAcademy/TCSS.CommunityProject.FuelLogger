@@ -13,9 +13,9 @@ internal class UserInterface
                 new SelectionPrompt<MenuOptions>()
                 .Title("[underline]Fuel Logger[/]")
                 .AddChoices(
-                    MenuOptions.AddVehicle, 
+                    MenuOptions.AddVehicle,
                     MenuOptions.ViewVehicle,
-                    MenuOptions.UpdateVehicle, 
+                    MenuOptions.UpdateVehicle,
                     MenuOptions.DeleteVehicle,
                     MenuOptions.CloseApplication)
                 );
