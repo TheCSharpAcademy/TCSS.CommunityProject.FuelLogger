@@ -44,5 +44,20 @@ internal class DataAccess
             }));
         }
     }
+
+    internal void AddVehicle(Vehicle vehicle)
+    {
+        using var connection = new SqliteConnection(connectionString);
+        connection.Open();
+        string addVehicleQuery = @" INSERT INTO Vehicles (DateCreated, Make,Model,FuelType,Year)
+        VALUES (@DateCreated, @Make,@Model,@FuelType,@Year)";
+        try
+        {
+            connection.Execute(addVehicleQuery, new { vehicle.DateCreated, vehicle.Make, vehicle.Model, vehicle.FuelType, vehicle.Year });
+        }
+        catch (Exception ex) { 
+            Console.WriteLine($"There was a problem adding vehicle: {ex.Message}");
+        }
+    }
 }
 
